@@ -46,7 +46,5 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     // If all fields are valid, submit the form
     if (isValid) {
         alert('Form submitted successfully!');
-        // Here you can add further form processing logic
-        // For example, sending form data to the server using AJAX
     }
 });
