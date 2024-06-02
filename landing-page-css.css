@@ -1,0 +1,140 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: optima;
+    font-size: 1.2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #fff;
+    color: #000;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.content, .features {
+    width: 48%;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.features img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, select, button {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.google-signup {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.or-divider {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.login-link a {
+    color: #00f;
+    text-decoration: none;
+}
+
+.feature-description {
+    display: flex;
+    align-items: center;
+}
+
+.creating-button {
+    background: #fff;
+    color: #00f;
+    border: 1px solid #00f;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+footer {
+    background: #fff;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content, .features {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content, .features {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    header h1, .content h2, .features h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group label, .feature-description p {
+        font-size: 0.9rem;
+    }
+}

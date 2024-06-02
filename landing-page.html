@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liyains Tech Learning Academy</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="landing-page-css.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Liyains-logo.png" height="150px" width="160px"><h1>Tech Learning Academy</h1>
+    </header>
+    <div class="container">
+        <!-- Content Section: Welcome message and Sign Up form -->
+        <section class="content" style="background-color:#ddd ;">
+            <h2>Welcome to Liyains!!</h2>
+            <br>
+            <p>Empowering you with the latest in technology and programming skills.</p>
+            <ul>
+                <li>Expert Instructors</li>
+                <li>Comprehensive Courses</li>
+                <li>Flexible Learning</li>
+            </ul>
+            <br>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required style="width: 26rem;">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required style="width: 26rem;">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" required style="width: 26rem;">
+                </div>
+                <div class="form-group">
+                    <label for="referral">How did you hear about us?</label>
+                    <br>
+                    <select id="referral" name="referral" required style="width: 26rem;">
+                        <option value="">Select an option</option>
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advertisement">Advertisement</option>
+                    </select>
+                    <br> 
+                    <br>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="or-divider">or</div>
+                <button type="button" class="google-signup">Sign In with Google <img src="./assets/google-logo.png" height="39px" ></button>
+            </form>
+            <div class="login-link">
+                <p>Already have an account? <a href="#">Login</a></p>
+            </div>
+        </section>
+        <!-- Features Section: Academy capabilities description and image -->
+        <section class="features">
+            <h2>Innovative Learning with Cutting-Edge Technology</h2>
+            <img src="./assets/Image 1.png" alt="Tech Learning">
+            <div class="feature-description">
+                <button class="creating-button">Learn More</button>
+                <p>Join our academy to master the latest tech skills and stay ahead in your career.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Join with 20k+ Learners! Let's see our happy students</p>
+        <p>&copy; 2024 Liyains Tech Learning Academy. All rights reserved.</p>
+    </footer>
+    <!-- Link to external JavaScript file -->
+    <script src="landing-page-js.js"></script>
+</body>
+</html>
