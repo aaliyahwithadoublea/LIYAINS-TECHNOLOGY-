@@ -1,9 +1,9 @@
-/* margin and padding */
+/* default designs */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: optima;
+    font-family: Optima, sans-serif;
     font-size: 1.2rem;
 }
 
@@ -62,6 +62,8 @@ input, select, button {
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%;  /* Make inputs full width*/
+    max-width: 100%; /* Ensure the inputs don't exceed their container's width */
 }
 
 button {
@@ -69,6 +71,10 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+button:hover {
+    background: #0053ba;  /* Add a hover effect */
 }
 
 .google-signup {
@@ -104,7 +110,7 @@ button {
     margin-right: 1rem;
 }
 
-.creating-button:hover{
+.creating-button:hover {
     background-color: #00f;
     color: #fff;
 }
@@ -127,6 +133,10 @@ footer {
     .content, .features {
         width: 90%;
     }
+
+    input, select, button {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -141,7 +151,9 @@ footer {
 
     .form-group label, .feature-description p {
         font-size: 0.9rem;
-        
     }
 
+    input, select, button {
+        width: 100%;
+    }
 }
