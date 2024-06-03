@@ -23,7 +23,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
         alert('Please enter your email address.');
         isValid = false;
     } else {
-        // Simple email format validation
+        // email format validation
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email.value.trim())) {
             alert('Please enter a valid email address.');

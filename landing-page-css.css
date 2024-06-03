@@ -104,6 +104,11 @@ button {
     margin-right: 1rem;
 }
 
+.creating-button:hover{
+    background-color: #00f;
+    color: #fff;
+}
+
 footer {
     background: #fff;
     color: #000;
